@@ -1,34 +1,82 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="nb"> 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>om oss</title>
+        <title>Kontakt oss</title>
     </head>
     <body>
-        <header>
-                <h1>Tredje verdenskrig</h1>
-                <nav>
-                    <ul>
-                        <li>
-                            <li>
-                                <a href="index.html">hjem</a>
-                            </li>
-                            <a href="https://www.google.com"target="_blank">google</a>
-                        </li>
-                        <li>
-                            <a href="#"contact.html>Kontakt oss</a>
-                        </li>
-                        <li>
-                            <a href="#">Om oss</a>
-                        </li>
-                    </ul>
-                </nav>
+        <header id="topp">
+            <a href="index.html"><h1>Tredje verdenskrig</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li>
+                        <a href="https://snl.no/f%C3%B8rste_verdenskrig" target="_blank">Første verdenskrig</a>
+                    </li>
+                    <li>
+                        <a href="https://snl.no/andre_verdenskrig" target="_blank">Andre verdenskrig</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kontakt oss</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Om oss</a>
+                    </li>
+                    <li>
+                        <a href="#bunn">Snarvei til footer</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main>
             <section>
-                <h2>om oss</h2>
+                <h2>Kontakt oss</h2>
+            </section>
+            <section>
+                <h2>Ta kontakt med oss idag</h2>
+                <form method="post">
+                    <label for="navn">Navn:</label>
+                    <input type="text" name="navn" placeholder="Baker" id="navn" maxlength="45" required> 
+                    <label>
+                        E-post:
+                        <input type="email" name="email" placeholder="navn@mail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+                    <label>
+                        Emne:
+                        <input type="text" name="emne" placeholder="Hva handler det om" required>
+                    </label>
+                    <label>
+                        Melding:
+                        <textarea name="melding"></textarea>
+                    </label>
+                    <label>
+                        Nei
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        Ja
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        Kanskje
+                        <input type="radio" name="valg">
+                    </label>
+                    <input type="submit" value="Send melding">
+                    <label>
+                        Favoritt mat
+                    <select name="fav">
+                        <option value="pizza">Pizza</option>
+                        <option value="sushi">Sushi</option>
+                        <option value="kebab">Kebab</option>
+                    </select>
+                    </label>
+                </form>
             </section>
         </main>
-        <footer>2024 mohamed said</footer>
+        <footer id="bunn">
+            <p>2024 Mohamed Baker</p>
+            <a href="#topp">Tilbake til toppen</a>
+        </footer>
     </body>
+</html>
